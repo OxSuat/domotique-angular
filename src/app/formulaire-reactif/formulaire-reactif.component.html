@@ -1,0 +1,14 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" method="POST">
+    <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.name" />
+    </div>
+
+    <div class="form-group">
+        <label for="name">Votre email: </label>
+        <input type="email" class="form-control" id="email"  name="email" [(ngModel)]="user.email" />
+    </div>
+
+    <button type="submit" class="btn btn-sucess">Valider</button>
+
+</form>
